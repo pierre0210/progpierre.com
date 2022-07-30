@@ -1,0 +1,16 @@
+.Home {
+	top: 0px;
+	position: static;
+	background-color: #2f3a50;
+	min-height: calc(100vh - 44.8px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	color: white;
+}
+
+.Home #discription {
+	font-size: 4px;
+}

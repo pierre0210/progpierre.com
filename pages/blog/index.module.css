@@ -1,0 +1,21 @@
+.wholepage{
+	background-color: #2f3a50;
+	color: aqua;
+	min-height: calc(100vh - 44.8px);
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.wholepage div a {
+	color: aqua;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+.wholepage div a strong {
+	font-weight: 200;
+}
+
+.wholepage div p {
+	margin-bottom: 30px;
+}
