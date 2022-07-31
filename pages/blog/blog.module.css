@@ -1,6 +1,5 @@
 .wholepage {
-	padding-left: 30px;
-	padding-top: 30px;
+	padding: 30px;
 	right: 0px;
 	color: aqua;
 	background-color: #2f3a50;
@@ -19,5 +18,7 @@
 	margin-bottom: 0px;
 	border-radius: 5px;
 	display: inline-block;
+	/*overflow-x: auto;*/
+	white-space: pre-wrap;
 	background-color: rgb(79, 67, 126);
 }
