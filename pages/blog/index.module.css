@@ -1,15 +1,20 @@
 .wholepage{
 	background-color: #2f3a50;
-	color: aqua;
+	color: rgb(255, 255, 255);
 	min-height: calc(100vh - 44.8px);
-	padding-top: 20px;
-	padding-left: 20px;
+	padding: 20px;
+	position: static;
+}
+
+.wholepage div {
+	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.3);
 }
 
 .wholepage div a {
-	color: aqua;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	font-size: 30px;
+	padding: 10px;
 }
 
 .wholepage div a strong {
@@ -17,5 +22,7 @@
 }
 
 .wholepage div p {
+	margin-top: 0px;
 	margin-bottom: 30px;
+	padding: 10px;
 }

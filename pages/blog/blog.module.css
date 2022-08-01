@@ -1,7 +1,7 @@
 .wholepage {
 	padding: 30px;
 	right: 0px;
-	color: aqua;
+	color: rgb(255, 255, 255);
 	background-color: #2f3a50;
 	min-height: calc(100vh - 44.8px);
 	position: static;
@@ -20,5 +20,5 @@
 	display: inline-block;
 	/*overflow-x: auto;*/
 	white-space: pre-wrap;
-	background-color: rgb(79, 67, 126);
+	background-color: rgb(42, 39, 52);
 }
