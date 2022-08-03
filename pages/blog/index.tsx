@@ -26,7 +26,7 @@ export default function Blog({ allPosts }: AllArrayType) {
 				{
 					allPosts.map((post) => (
 						<div key={post.slug}>
-							<Link href={`/blog/${post.slug}`}><a><strong>{post.data.title}</strong></a></Link> 
+							<Link href={`/blog/${post.slug}`}><a>{post.data.title}</a></Link>
 							<p>{post.data.date.replace("T", " ").split(".")[0]}</p>
 						</div>
 					))
