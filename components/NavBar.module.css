@@ -1,11 +1,11 @@
 .bar {
-	background-color: #272948;
+	background-color: #2d3039;
 	position: sticky;
 	top: 0;
 	padding: 0.2em 0.325em 0.2em 0.375em;
 	line-height: 1.8em;
 	flex-direction: row;
-	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0.60em 0 #252936;
 	display: flex;
 	z-index: 3;
 }
@@ -15,25 +15,32 @@
 }
 
 #logo strong {
+	font-family: "Comfortaa";
+	font-weight: 700;
+	text-shadow: 0.5px 0.5px #191d2c;
 	background-color: #ebebf3;
 	color: #191d2c;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
 	display: inline-block;
 	margin-right: 0.325em;
 	border-radius: 0.2em;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
+	padding-top: 0.2em;
 	margin-top: 0.3em;
 	margin-bottom: 0.3em;
 }
 
 #logo span {
+	font-family: "Comfortaa";
 	color: #ebebf3;
 }
 
 .bar button {
+	font-family: "Comfortaa";
+	font-weight: 700;
 	color: #ebebf3;
-	background-color: #272948;
+	background-color: #2d3039;
 	font-size: 15px;
 	border-radius: 0.2em;
 	letter-spacing: 0.2em;
@@ -54,16 +61,13 @@
 #menuexpanded {
 	z-index: 2;
 	margin: 0;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	background-color: #272948;
+	padding: 0px;
+	background-color: #323446;
 	display: block;
 	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
-	min-height: calc(100vh - 44.8px);
-	position: absolute;
-	top: 44.8px;
+	min-height: calc(100vh - 48px);
+	position: fixed;
+	top: 48px;
 	right: 0px;
 	left: 0px;
 	justify-content: center;
@@ -77,7 +81,7 @@
 	padding-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	background-color: #272948;
+	background-color: inherit;
 	display: block;
 	min-height: auto;
 	position: absolute;
@@ -90,6 +94,7 @@
 }
 
 #menuexpanded ul li {
+	font-family: Comfortaa;
 	list-style-type: none;
 	/*height: calc((100vh - 44.8px)/3);*/
 	position: relative;
@@ -110,6 +115,7 @@
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 0.2em;
+	text-shadow: 0.5px 0.5px #acacac;
 }
 
 @media screen and (max-width: 768px) {
@@ -119,21 +125,16 @@
 }
 
 @media screen and (max-width: 768px) {
-	#menuexpanded {
-		z-index: 2;
-		min-height: 0;
-	}
-
 	#menuexpanded ul {
 		margin: 0;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
-		background-color: #272948;
 	  	display: block;
 		box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
-		min-height: calc(100vh - 44.8px);
+		min-height: calc(100vh - 48px);
+		background-color: #323446;
 		position: absolute;
 		top: 0px;
 		right: 0px;
@@ -145,7 +146,7 @@
 
 	#menuexpanded ul li {
 		list-style-type: none;
-    	height: calc((100vh - 44.8px)/3);
+    	height: calc((100vh - 48px)/3);
 	}
 
 	#menuexpanded ul li a {
@@ -156,10 +157,5 @@
     	top: 50%;
 		position: relative;
 		transform: translateY(-50%);
-	}
-
-	#menuexpanded ul li a strong {
-		font-size: 20px;
-		font-weight: 400;
 	}
 }

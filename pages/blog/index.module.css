@@ -1,7 +1,7 @@
 .wholepage{
-	background-color: #2f3a50;
+	background-color: #3d424b;
 	color: rgb(255, 255, 255);
-	min-height: calc(100vh - 44.8px);
+	min-height: calc(100vh - 48px);
 	padding: 20px;
 	position: static;
 }
@@ -18,10 +18,12 @@
 }
 
 .wholepage div a strong {
-	font-weight: 200;
+	font-family: "Roboto Mono";
+	font-weight: 400;
 }
 
 .wholepage div p {
+	font-family: "Roboto Mono";
 	margin-top: 0px;
 	margin-bottom: 30px;
 	padding: 10px;

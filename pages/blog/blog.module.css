@@ -1,16 +1,22 @@
 .wholepage {
-	padding: 30px;
+	padding: 60px;
+	padding-left: 80px;
+	background-color: #1d1d27;
 	right: 0px;
 	color: rgb(255, 255, 255);
-	background-color: #2f3a50;
-	min-height: calc(100vh - 44.8px);
+	min-height: calc(100vh - 48px);
 	position: static;
 }
 
 .wholepage div h1 {
+	font-family: "Noto Sans TC", "Playfair Display";
+	font-weight: 200;
 	margin: 0px;
 }
-
+.wholepage div h2 {
+	font-family: "Noto Sans TC", "Playfair Display";
+	font-weight: 100;
+}
 .wholepage pre {
 	min-width: 50%;
 	padding: 16px;
@@ -21,4 +27,15 @@
 	/*overflow-x: auto;*/
 	white-space: pre-wrap;
 	background-color: rgb(42, 39, 52);
+}
+.wholepage pre code {
+	font-family: "Source Code Pro", "Roboto Mono", "Noto Sans TC", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+	.wholepage {
+		padding: 30px;
+	}
 }
