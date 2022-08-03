@@ -3,7 +3,7 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = join(process.cwd(), '_posts')
+const postsDirectory = join(process.cwd(), 'posts')
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
@@ -32,7 +32,7 @@ export function getAllPosts() {
 }
 
 /*
-At the start of all posts must contain meta
+At the start of all posts must contain meta(comment)
 ---
 title: 'Some Title'
 date: '2022-07-30T07:33:55.520Z'

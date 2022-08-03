@@ -1,0 +1,30 @@
+.News {
+	background-color: #3d424b;
+	color: rgb(255, 255, 255);
+	min-height: calc(100vh - 48px);
+	padding: 60px;
+	padding-left: 80px;
+	position: static;
+}
+
+.News div h3 {
+	font-family: "Noto Sans TC";
+}
+
+.News div a {
+	font-family: "Roboto Mono", "Source Code Pro";
+	color: rgb(80, 171, 250);
+	text-decoration: none;
+	font-size: 20px;
+	text-shadow: 1px 1px rgb(6, 96, 175);
+}
+
+.News div p {
+	font-family: "Noto Sans TC";
+}
+
+@media screen and (max-width: 768px) {
+	.News {
+		padding: 30px;
+	}
+}

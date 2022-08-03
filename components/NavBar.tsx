@@ -16,13 +16,13 @@ function NavBar() {
 				<div id={ isNavExpand ? styles.menuexpanded : styles.menu }>
 					<ul>
 						<li>
-							<Link href="/about">
-								<a><strong>About</strong></a>
+							<Link href="/news">
+								<a><strong>News</strong></a>
 							</Link>
 						</li>
 						<li>
-							<Link href="/news">
-								<a><strong>News</strong></a>
+							<Link href="/project">
+								<a><strong>Project</strong></a>
 							</Link>
 						</li>
 						<li>

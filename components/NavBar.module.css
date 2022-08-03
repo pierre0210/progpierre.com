@@ -62,7 +62,7 @@
 	z-index: 2;
 	margin: 0;
 	padding: 0px;
-	background-color: #323446;
+	background-color: #3b3d4d;
 	display: block;
 	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
 	min-height: calc(100vh - 48px);
@@ -134,7 +134,6 @@
 	  	display: block;
 		box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
 		min-height: calc(100vh - 48px);
-		background-color: #323446;
 		position: absolute;
 		top: 0px;
 		right: 0px;

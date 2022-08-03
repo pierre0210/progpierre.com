@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 					width: 300,
 					background: 'white'
 				}}/>
-				<p>Just some notes about what I&#39;m interested in.</p>
+				<p>Just some notes about what I&#39;m working on.</p>
 			</div>
     </>
   )
