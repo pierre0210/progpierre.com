@@ -23,12 +23,13 @@ export default function Post({ post, content }: Obj) {
 		<>
 			<NavBar/>
 			<div className={styles.wholepage}>
-				<div
-					dangerouslySetInnerHTML={{ __html: content }}
-				/>
+				<div>
+					<div
+						dangerouslySetInnerHTML={{ __html: content }}
+					/>
+				</div>
 			</div>
 		</>
-		
 	);
 }
 

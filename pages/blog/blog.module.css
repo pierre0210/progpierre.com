@@ -1,6 +1,5 @@
 .wholepage {
-	padding: 60px;
-	padding-left: 80px;
+	padding: 30px;
 	background-color: #1d1d27;
 	right: 0px;
 	color: rgb(255, 255, 255);
@@ -8,16 +7,26 @@
 	position: static;
 }
 
-.wholepage div h1 {
+.wholepage div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wholepage div div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wholepage div div h1 {
 	font-family: "Noto Sans TC", "Playfair Display";
 	font-weight: 200;
 	margin: 0px;
 }
-.wholepage div h2 {
+.wholepage div div h2 {
 	font-family: "Noto Sans TC", "Playfair Display";
 	font-weight: 100;
 }
-.wholepage pre {
+.wholepage div div pre {
 	min-width: 50%;
 	padding: 16px;
 	margin-top: 0px;
@@ -28,14 +37,38 @@
 	white-space: pre-wrap;
 	background-color: rgb(42, 39, 52);
 }
-.wholepage pre code {
+.wholepage div div pre code {
 	font-family: "Source Code Pro", "Roboto Mono", "Noto Sans TC", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 	font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
-	.wholepage {
-		padding: 30px;
+@media (min-width: 576px) {
+	.wholepage div {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wholepage div {
+		max-width: 720px;
+	}
+	.wholepage div div {
+		max-width: 88%;
+	}	
+}
+
+@media (min-width: 992px) {
+	.wholepage div {
+		max-width: 960px;
+	}
+	.wholepage div div {
+		max-width: 60%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.wholepage div {
+		max-width: 1140px;
 	}
 }
