@@ -8,6 +8,8 @@
 
 .wholepage div {
 	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.3);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .wholepage div a {
@@ -28,4 +30,28 @@
 	margin-top: 0px;
 	margin-bottom: 30px;
 	padding: 10px;
+}
+
+@media (min-width: 576px) {
+	.wholepage div {
+		max-width: 85%;
+	}
+}
+
+@media (min-width: 768px) {
+	.wholepage div {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 992px) {
+	.wholepage div {
+		max-width: 60%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.wholepage div {
+		max-width: 50%;
+	}
 }
