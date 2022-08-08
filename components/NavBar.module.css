@@ -62,7 +62,7 @@
 	z-index: 2;
 	margin: 0;
 	padding: 0px;
-	background-color: #3b3d4d;
+	background-color: rgba(59, 61, 77, 0.95);
 	display: block;
 	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
 	min-height: calc(100vh - 48px);
@@ -81,7 +81,6 @@
 	padding-bottom: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	background-color: inherit;
 	display: block;
 	min-height: auto;
 	position: absolute;
@@ -120,18 +119,15 @@
 
 @media screen and (max-width: 768px) {
 	#menu ul {
-	  	display: none;
+		display: none;
 	}
-}
-
-@media screen and (max-width: 768px) {
 	#menuexpanded ul {
 		margin: 0;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
-	  	display: block;
+	  display: block;
 		box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
 		min-height: calc(100vh - 48px);
 		position: absolute;
@@ -145,15 +141,14 @@
 
 	#menuexpanded ul li {
 		list-style-type: none;
-    	height: calc((100vh - 48px)/3);
+    height: calc((100vh - 48px)/3);
 	}
 
 	#menuexpanded ul li a {
-		color: #ebebf3;
 		text-decoration: none;
 		text-align: center;
 		display: block;
-    	top: 50%;
+    top: 50%;
 		position: relative;
 		transform: translateY(-50%);
 	}
