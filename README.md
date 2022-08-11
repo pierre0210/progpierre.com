@@ -10,6 +10,19 @@ npm run dev
 yarn dev
 ```
 
+### Add post
+
+Put markdown files inside `posts` folder before building. 
+At the start of every post should contain meta info as follows:
+```
+---
+title: 'Some Title'
+date: '2022-07-30T07:33:55.520Z'
+author: 'Pierre'
+---
+```
+These information will be displayed in the blog index page.
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
