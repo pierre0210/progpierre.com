@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import '../styles/globals.css'
 
 import type { AppProps } from 'next/app'
@@ -7,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
 		<>
 			<Head>
-				<title>progpierre</title>
+				<title>Pierre's Note</title>
 			</Head>
 			<Component {...pageProps} />
 		</>
