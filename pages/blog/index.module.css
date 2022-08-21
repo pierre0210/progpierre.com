@@ -12,6 +12,10 @@
 	margin-right: auto;
 }
 
+.wholepage div:hover {
+	box-shadow: 0 0 0.50em 0.1em rgba(0, 0, 0, 0.5);
+}
+
 .wholepage div a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
