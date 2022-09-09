@@ -19,7 +19,7 @@
 
 .wholepage h1 {
 	font-family: "Noto Sans TC", "Playfair Display";
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 32px;
 	margin: 0px;
 }
@@ -28,7 +28,7 @@
 	font-size: 24px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-weight: 100;
+	font-weight: 300;
 }
 .wholepage h3 {
 	font-family: "Noto Sans TC", "Playfair Display";
@@ -45,6 +45,11 @@
 }
 .wholepage ul {
 	padding-left: 30px;
+	list-style-type: disc;
+}
+.wholepage ol {
+	padding-left: 30px;
+	list-style-type: decimal;
 }
 .wholepage a {
 	color: #33ccff;
@@ -53,18 +58,19 @@
 	color: #999db2;
 	text-decoration: underline;
 }
-.wholepage ul li::before {
-	content: "\2022";
-	display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-	font-weight: bold;
-}
 .wholepage ul li {
+	font-family: "Noto Sans TC", "Playfair Display";
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-weight: 300;
 	font-size: 16px;
+}
+.wholepage ol li {
+	font-family: "Noto Sans TC", "Playfair Display";
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: 100;
+	font-size: 17px;
 }
 .wholepage pre {
 	min-width: 50%;
@@ -91,6 +97,10 @@
 .wholepage strong {
 	font-weight: 500;
 }
+.wholepage img {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
 @media (min-width: 576px) {
 	.wholepage div {
@@ -103,16 +113,16 @@
 		max-width: 720px;
 	}
 	.wholepage div div {
-		max-width: 88%;
+		max-width: 60%%;
 	}	
 }
 
 @media (min-width: 992px) {
 	.wholepage div {
-		max-width: 960px;
+		max-width: 1000px;
 	}
 	.wholepage div div {
-		max-width: 60%;
+		max-width: 65%;
 	}
 }
 
