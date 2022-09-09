@@ -9,11 +9,8 @@ const Home: NextPage = () => {
     <>
       <NavBar/>
 			<div className={styles.Home}>
-				<h1>Hi there</h1>
-				<hr style={{
-					width: 300,
-					background: 'white'
-				}}/>
+				<h1 className="text-3xl">Hi there</h1>
+				<hr className="w-80 bg-white"/>
 				<p>Just some notes about what I&#39;m working on.</p>
 			</div>
     </>

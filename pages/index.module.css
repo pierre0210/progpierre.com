@@ -1,7 +1,7 @@
 .Home {
 	top: 0px;
 	position: static;
-	background-color: #3b3d4d;
+	background-color: #2c2e3a;
 	min-height: calc(100vh - 48px);
 	display: flex;
 	flex-direction: column;

@@ -8,26 +8,32 @@ function NavBar() {
 		<>
 			<div className={styles.bar}>
 				<Link href="/">
-					<a id={styles.logo}><strong>PROGPIERRE</strong> <span>by Pierre</span></a>
+					<a id={styles.logo}><p>PROGPIERRE</p> <span>by Pierre</span></a>
 				</Link>
-				<button onClick={ () => setNavState(!isNavExpand) }><strong>Menu</strong></button>
+				<button onClick={ () => setNavState(!isNavExpand) } className="transition ease-in-out delay-75 hover:bg-gray-700 hover:shadow-inner duration-300"><strong>Menu</strong></button>
 			</div>
 			<nav id="selector">
-				<div id={ isNavExpand ? styles.menuexpanded : styles.menu }>
+				<div id={ isNavExpand ? styles.menuexpanded : styles.menu } className="backdrop-blur-sm">
 					<ul>
 						<li>
 							<Link href="/news">
-								<a><strong>News</strong></a>
+								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+									<strong>News</strong>
+								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href="/project">
-								<a><strong>Project</strong></a>
+								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+									<strong>Project</strong>
+								</a>
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog">
-								<a><strong>Blog</strong></a>
+								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+									<strong>Blog</strong>
+								</a>
 							</Link>
 						</li>
 					</ul>
