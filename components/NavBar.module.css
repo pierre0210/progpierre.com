@@ -16,7 +16,7 @@
 
 #logo p {
 	font-family: "Source Code Pro";
-	text-shadow: 2px 2px rgba(25, 29, 44, 0.15);
+	/*text-shadow: 2px 2px rgba(25, 29, 44, 0.15);*/
 	background-color: #dfdfec; /*#ebebf3;*/
 	font-weight: 700;
 	font-size: 18px;
@@ -30,6 +30,11 @@
 	//padding-top: 0.2em;
 	margin-top: 0.4em;
 	margin-bottom: 0.4em;
+	transition: text-shadow 0.3s;
+}
+
+#logo p:hover {
+	text-shadow: 4px 3px rgba(25, 29, 44, 0.3);
 }
 
 #logo span {
