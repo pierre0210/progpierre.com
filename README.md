@@ -19,8 +19,11 @@ At the start of every post should contain meta info as follows:
 title: 'Some Title'
 date: '2022-07-30T07:33:55.520Z'
 author: 'Pierre'
+thumbtail: 'https://i.imgur.com/example.png'
 ---
 ```
+Thumbtail default option only allows images from imgur, you can add more domain name in `next.config.js`.
+
 These information will be displayed in the blog index page.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
