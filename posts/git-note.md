@@ -2,6 +2,7 @@
 title: 'Git command note'
 date: '2022-07-30T14:20:31.122Z'
 author: 'Pierre'
+thumbtail: 'https://i.imgur.com/p9A17VW.png'
 ---
 # Git筆記
 ## 使用者設定
