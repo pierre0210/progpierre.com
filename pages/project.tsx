@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import styles from './project.module.css'
 

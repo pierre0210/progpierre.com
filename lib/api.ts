@@ -38,5 +38,6 @@ At the start of all posts must contain meta(comment)
 title: 'Some Title'
 date: '2022-07-30T07:33:55.520Z'
 author: 'Pierre'
+thumbtail: 'https://example.com/example.jpg'
 ---
 */

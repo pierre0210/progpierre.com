@@ -5,7 +5,7 @@
 	padding: 2.4px 0.325em 2.4px 0.375em;
 	line-height: 1.8em;
 	flex-direction: row;
-	box-shadow: 0 0 0.60em 0 #252936;
+	box-shadow: 0 0 0.60em 0 rgba(0, 0, 0, 0.2);
 	display: flex;
 	z-index: 3;
 }
