@@ -14,13 +14,10 @@
 
 .wholepage div a {
 	color: rgb(255, 255, 255);
-	text-decoration: none;
 	font-size: 30px;
 	padding: 10px;
 	height: 50px;
-	margin: 0px;
 	font-family: "Roboto Mono";
-	font-weight: 400;
 	word-wrap: break-word;
 	display: inline-block;
 }
@@ -32,25 +29,25 @@
 }
 
 @media (min-width: 576px) {
-	.wholepage div {
+	.wholepage #index {
 		max-width: 85%;
 	}
 }
 
 @media (min-width: 768px) {
-	.wholepage div {
+	.wholepage #index {
 		max-width: 80%;
 	}
 }
 
 @media (min-width: 992px) {
-	.wholepage div {
-		max-width: 80%;
+	.wholepage #index {
+		max-width: 60%;
 	}
 }
 
 @media (min-width: 1200px) {
-	.wholepage div {
-		max-width: 60%;
+	.wholepage #index {
+		max-width: 50%;
 	}
 }
