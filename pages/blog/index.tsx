@@ -28,12 +28,12 @@ export default function Blog({ allPosts }: AllArrayType) {
 				{
 					allPosts.map((post) => (
 						<div key={post.slug} id={styles.index} className="rounded mx-auto mb-5 lg:flex md:block relative">
-							<div id={styles.image} className="m-2 lg:left-0 lg:my-auto pt-2">
+							<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 								<Image
 									src={post.data.thumbtail}
 									alt="No Image"
-									width={240}
-									height={120}
+									width={200}
+									height={100}
 									layout="intrinsic"
 								/>
 							</div>
