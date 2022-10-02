@@ -1,6 +1,6 @@
 .wholepage {
 	padding: 30px;
-	background-color: #2c2e3a; /*#1d1d27*/
+	background-color: #1d1d27; /*#1d1d27#2c2e3a*/
 	right: 0px;
 	color: rgb(255, 255, 255);
 	min-height: calc(100vh - 48px);
