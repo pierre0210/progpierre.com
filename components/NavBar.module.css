@@ -138,7 +138,7 @@
 		padding-bottom: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
-	  display: block;
+		display: block;
 		min-height: calc(100vh - 48px);
 		position: absolute;
 		top: 0px;
@@ -151,14 +151,14 @@
 
 	#menuexpanded ul li {
 		list-style-type: none;
-    height: calc((100vh - 48px)/3);
+		height: calc((100vh - 48px)/3);
 	}
 
 	#menuexpanded ul li a {
 		text-decoration: none;
 		text-align: center;
 		display: block;
-    top: 50%;
+		top: 50%;
 		position: relative;
 		transform: translateY(-50%);
 	}

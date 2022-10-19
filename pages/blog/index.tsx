@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 type AllType = {
 	slug: string,
-  data: {
+	data: {
 		title: string,
 		date: string,
 		author: string,
