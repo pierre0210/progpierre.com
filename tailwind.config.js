@@ -10,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
 			boxShadow: {
-				"sep": "5px 5px 1px 1px rgba(0, 0, 0, 0.15)",
+				"sep": "5px 5px 2px 2px rgba(0, 0, 0, 0.30)",
 			},
 			backgroundColor: {
-				"select": "rgba(41, 45, 66, 1.0)",
+				"select": "rgba(50, 56, 84, 1.0)",
 				"menu": "rgb(79, 86, 125)",
 			},
 			dropShadow: {
