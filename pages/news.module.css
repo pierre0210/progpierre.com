@@ -6,11 +6,6 @@
 	position: static;
 }
 
-.News div {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .News div h3 {
 	font-family: "Noto Sans TC";
 }
