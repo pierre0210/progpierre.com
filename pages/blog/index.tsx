@@ -26,8 +26,8 @@ export default function Blog({ allPosts }: AllArrayType) {
 			<NavBar/>
 			<div className={styles.wholepage}>
 				{
-					allPosts.map((post) => (
-						<div key={post.slug} id={styles.index} className="rounded mx-auto mb-5 lg:flex md:block relative">
+					allPosts.map((post, index) => (
+						<div key={post.slug} id={styles.index} className="rounded-md mx-auto mb-7 lg:flex md:block relative transition ease-in-out delay-75 hover:shadow-sep hover:bg-slate-700 hover:-translate-x-1 hover:-translate-y-1 duration-300">
 							<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 								<Image
 									src={post.data.thumbtail}
