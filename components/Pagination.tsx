@@ -11,7 +11,6 @@ type param = {
 const Pagination = ({ pageSize, page, totalPosts, onChange}: param) => {
 	const { currentPage, totalPages, handleClickNext, handleClickPrev } = usePagination({ defaultPage: page, pageSize: pageSize, totalPosts: totalPosts });
 	useEffect(() => {
-		console.log(currentPage);
 		onChange(currentPage);
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [currentPage]);
