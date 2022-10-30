@@ -1,5 +1,5 @@
 .wholepage { 
-	background-color: #2c2e3a;
+	background-color: #02061c/*#2c2e3a*/;
 	color: rgb(255, 255, 255);
 	min-height: calc(100vh - 48px);
 	padding-top: 20px;
@@ -9,7 +9,7 @@
 }
 
 .wholepage #index {
-	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 1);
 }
 
 .wholepage div a {
