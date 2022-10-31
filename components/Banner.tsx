@@ -1,5 +1,5 @@
 import styles from './NavBar.module.css';
 
-function Banner() {
+const Banner = () => {
 	
 }
