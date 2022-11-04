@@ -14,7 +14,7 @@ module.exports = {
 			},
 			backgroundColor: {
 				"blog": "rgb(3, 78, 128)",
-				"select": "rgba(50, 56, 84, 1.0)",
+				"select": "rgba(3, 56, 84, 1.0)",
 				"menu": "rgb(79, 86, 125)",
 			},
 			dropShadow: {

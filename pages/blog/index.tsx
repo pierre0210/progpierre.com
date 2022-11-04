@@ -6,6 +6,7 @@ import styles from './index.module.css'
 import Image from 'next/image'
 import Pagination from '../../components/Pagination'
 import { useState } from 'react'
+import { Banner } from '../../components/Banner'
 
 type AllType = {
 	slug: string,
@@ -33,6 +34,8 @@ export default function Blog({ allPosts }: AllArrayType) {
 	return (
 		<>
 			<NavBar/>
+			<Banner image="https://i.imgur.com/3LHwugp.jpg"/>
+			
 			<div className={styles.wholepage}>
 				{
 					postList.map((post, index) => (

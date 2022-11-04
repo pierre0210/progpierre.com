@@ -12,6 +12,10 @@
 	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 1);
 }
 
+.wholepage #banner {
+	background-color: #02061c;
+}
+
 .wholepage div a {
 	color: rgb(255, 255, 255);
 	font-size: 30px;

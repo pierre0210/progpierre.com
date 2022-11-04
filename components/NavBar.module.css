@@ -34,7 +34,7 @@
 }
 
 #logo p:hover {
-	text-shadow: 4px 3px rgba(25, 29, 44, 0.3);
+	text-shadow: 4px 3px rgba(25, 29, 44, 0.2);
 }
 
 #logo span {
@@ -46,7 +46,7 @@
 	font-family: "Comfortaa";
 	font-weight: 700;
 	color: #ebebf3;
-	background-color: #012d4a/*#232324#2d3039*/;
+	background-color: #033c61/*#232324#2d3039*/;
 	font-size: 15px;
 	border-radius: 0.2em;
 	letter-spacing: 0.2em;
@@ -70,7 +70,7 @@
 	padding: 0px;
 	background-color: rgba(2, 6, 28, 0.7);
 	display: block;
-	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.5);
 	min-height: calc(100vh - 48px);
 	position: fixed;
 	top: 48px;
