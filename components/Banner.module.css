@@ -1,3 +1,14 @@
 .banner {
 	background-color: #02061c;
+	position: relative;
+}
+
+.banner #text {
+	font-family: "Comfortaa";
+	letter-spacing: 5px;
+	text-shadow: 2px 2px rgba(20, 186, 181, 0.5);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

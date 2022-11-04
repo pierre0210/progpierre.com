@@ -22,7 +22,9 @@ type AllType = {
 type AllArrayType = {
 	allPosts: AllType[],
 }
-
+//https://i.imgur.com/3LHwugp.jpg
+//https://i.imgur.com/a2597Fu.png
+//https://i.imgur.com/wQZcxgN.jpg
 export default function Blog({ allPosts }: AllArrayType) {
 	const pageSize = 5;
 	const [postList, setPostList] = useState([] as AllType[]);
@@ -34,7 +36,7 @@ export default function Blog({ allPosts }: AllArrayType) {
 	return (
 		<>
 			<NavBar/>
-			<Banner image="https://i.imgur.com/3LHwugp.jpg"/>
+			<Banner image="https://i.imgur.com/FXO8S4K.jpg" text="Blog"/>
 			
 			<div className={styles.wholepage}>
 				{
