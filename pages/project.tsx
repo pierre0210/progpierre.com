@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
+import { Banner } from '../components/Banner'
 import NavBar from '../components/NavBar'
 import styles from './project.module.css'
 
@@ -7,6 +8,7 @@ const Project : NextPage = () => {
 	return(
 		<>
 			<NavBar/>
+			<Banner image="https://i.imgur.com/FXO8S4K.jpg" text="Project" />
 			<div className={styles.Project}>
 				<div>
 					<h1>NovelAI Discord Bot (TypeScript)</h1>
