@@ -23,3 +23,7 @@ thumbtail: 'https://i.imgur.com/example.png'
 ---
 ```
 Thumbtail default option only allows images from imgur, you can add more domain name in `next.config.js`.
+
+### TODO
+- [ ] Footer
+- [ ] API
