@@ -2,14 +2,16 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
+import PostMatter from '../interfaces/PostMatter'
+import Post from '../interfaces/Post'
 
 const postsDirectory = join(process.cwd(), 'posts')
 
-export function getPostSlugs() {
+export function getPostSlugs(): string[] {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug: string) {
+export function getPostBySlug(slug: string): Post {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -17,12 +19,12 @@ export function getPostBySlug(slug: string) {
 
 	return {
 		slug: realSlug,
-		data,
+		data: data as PostMatter,
 		content,
 	}
 }
 
-export function getAllPosts() {
+export function getAllPosts(): Post[] {
   const slugs = getPostSlugs()
   const posts = slugs
 		.filter((slug) => slug.endsWith(".md"))
@@ -38,6 +40,6 @@ At the start of all posts must contain meta(comment)
 title: 'Some Title'
 date: '2022-07-30T07:33:55.520Z'
 author: 'Pierre'
-thumbtail: 'https://example.com/example.jpg'
+thumbnail: 'https://example.com/example.jpg'
 ---
 */

@@ -7,32 +7,31 @@ import Image from 'next/image'
 import Pagination from '../../components/Pagination'
 import { useState } from 'react'
 import { Banner } from '../../components/Banner'
+import PostMatter from '../../interfaces/PostMatter'
 
-type AllType = {
+type PostType = {
 	slug: string,
-	data: {
-		title: string,
-		date: string,
-		author: string,
-		thumbtail: string,
-	},
+	data: PostMatter
 	content: string,
 }
 
-type AllArrayType = {
-	allPosts: AllType[],
+type PostArrayType = {
+	allPosts: PostType[],
 }
+
 //https://i.imgur.com/3LHwugp.jpg
 //https://i.imgur.com/a2597Fu.png
 //https://i.imgur.com/wQZcxgN.jpg
-export default function Blog({ allPosts }: AllArrayType) {
+
+export default function Blog({ allPosts }: PostArrayType) {
 	const pageSize = 5;
-	const [postList, setPostList] = useState([] as AllType[]);
+	const [postList, setPostList] = useState([] as PostType[]);
 	const handleOnChange = (currentPage: number) => {
 		const max = currentPage * pageSize;
 		const min = max - pageSize + 1;
 		setPostList(allPosts.filter((_value, index) => index + 1 >= min && index + 1 <= max));
-	}
+	};
+
 	return (
 		<>
 			<NavBar/>
@@ -44,7 +43,7 @@ export default function Blog({ allPosts }: AllArrayType) {
 						<div key={post.slug} id={styles.index} className="rounded-md mx-auto mb-7 lg:flex md:block relative transition ease-in-out delay-75 hover:shadow-sep hover:bg-blog hover:-translate-x-1 hover:-translate-y-1 duration-300">
 							<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 								<Image
-									src={post.data.thumbtail}
+									src={post.data.thumbnail}
 									alt="No Image"
 									width={200}
 									height={100}
@@ -65,11 +64,17 @@ export default function Blog({ allPosts }: AllArrayType) {
 }
 
 export function getStaticProps() {
-	const posts = getAllPosts()
-	const allPosts = posts.map((post) => {return {slug: post.slug, data: post.data, content: post.content}}) as AllType[]
+	const posts = getAllPosts();
+	const allPosts = posts.map((post) => {
+		return { 
+			slug: post.slug, 
+			data: post.data, 
+			content: post.content 
+		}
+	}) as PostType[];
 	return {
 		props: {
 			allPosts
 		},
-	}
+	};
 }

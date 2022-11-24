@@ -4,19 +4,11 @@ import markdownToHtml from "../../lib/markdownToHTML";
 import ErrorPage from "next/error";
 import NavBar from "../../components/NavBar";
 import styles from "./blog.module.css"
+import Post from "../../interfaces/Post";
 
-type Obj = {
-	post: {
-		slug: string,
-		data: string,
-		content: string,
-	}
-	content: string,
-}
-
-export default function Post({ post, content }: Obj) {
+export default function BlogPost({ slug, data, content }: Post) {
 	const route = useRouter()
-	if(!route.isFallback && !post?.slug) {
+	if(!route.isFallback && !slug) {
 		return <ErrorPage statusCode={404}/>
 	}
 	return (
@@ -31,37 +23,39 @@ export default function Post({ post, content }: Obj) {
 			</div>
 		</>
 	);
-}
+};
 
-type Params = {
+type Paths = {
 	params: {
 		slug: string
 	}
-}
+};
 
-export async function getStaticProps({ params }: Params) {
-	const post = getPostBySlug(params.slug)
-	const content = await markdownToHtml(post.content || '')
+export async function getStaticProps({ params }: Paths) {
+	const post = getPostBySlug(params.slug);
+	const content = await markdownToHtml(post.content || '');
+	const slug = post.slug;
+	const data = post.data;
 
 	return {
 		props: {
-			post,
+			slug,
+			data,
 			content,
-		},
-	}
+		} as Post,
+	};
 }
 
 export async function getStaticPaths() {
-	const posts = getAllPosts()
+	const posts = getAllPosts();
+	const paths: Paths[] = posts.map((post) => ({
+		params: {
+			slug: post.slug,
+		}
+	}));
 
 	return {
-		paths: posts.map((post) => {
-			return {
-				params: {
-					slug: post.slug,
-				},
-			}
-		}),
+		paths: paths,
 		fallback: false,
-	}
-}
+	};
+};
