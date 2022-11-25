@@ -1,17 +1,17 @@
-.wholepage { 
+#wholepage { 
 	background-color: #e3f1fa/*#02061c*/;
 	color: rgb(2, 104, 117);
 	min-height: calc(100vh - 48px);
-	padding: 20px;
+	margin: 1.5rem;
 	flex-direction: column;
 	flex-grow: 1;
 }
 
-.wholepage #index {
+#wholepage #index {
 	box-shadow: 0 0 0.50em 0 rgba(92, 146, 181, 1);
 }
 
-.wholepage div a {
+#wholepage div a {
 	font-size: 30px;
 	padding: 10px;
 	height: 50px;
@@ -21,7 +21,7 @@
 	display: inline-block;
 }
 
-.wholepage div p {
+#wholepage div p {
 	font-family: "Roboto Mono";
 	margin-top: 0px;
 	padding: 10px;

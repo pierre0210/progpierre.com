@@ -14,6 +14,7 @@ module.exports = {
 			},
 			backgroundColor: {
 				"blog": "rgb(56, 89, 110)",
+				"index-bg": "rgb(227, 241, 250)",
 				"select": "rgba(3, 56, 84, 1.0)",
 				"menu": "rgb(79, 86, 125)",
 			},
@@ -22,7 +23,11 @@ module.exports = {
 			},
 			textColor: {
 				"blog-title": "rgb(2, 104, 117)",
-				"blog-title-select": "rgb(233, 237, 240)",
+				"blog-title-select": "rgb(243, 247, 240)",
+			},
+			fontFamily: {
+				"Playfair-Display": "Playfair Display",
+				"Roboto-Mono": "Roboto Mono"
 			},
 		},
   },

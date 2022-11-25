@@ -37,13 +37,13 @@ export default function Blog({ allPosts }: PostArrayType) {
 		<>
 			<NavBar/>
 			<div className="lg:flex md:block">
-				<div className="grow">
-					<p className="text-center">Blog</p>
+				<div className="bg-index-bg m-6">
+					<p className="text-center text-7xl text-blog-title px-10 font-Roboto-Mono py-10 font-extrabold">Blog</p>
 				</div>
-				<div className={styles.wholepage}>
+				<div id={styles.wholepage} className="p-5 lg:p-20">
 					{
 						postList.map((post, index) => (
-							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-blog-title-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-blog-title-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
 								<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 									<Image
 										src={post.data.thumbnail}
