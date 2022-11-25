@@ -5,7 +5,7 @@ import styles from './NavBar.module.css';
 function NavBar() {
 	const [isNavExpand, setNavState] = useState(false);
 	return (
-		<>
+		<div>
 			<div className={styles.bar}>
 				<Link href="/">
 					<a id={styles.logo}><p>PROGPIERRE</p> <span>by Pierre</span></a>
@@ -41,8 +41,7 @@ function NavBar() {
 					</ul>
 				</div>
 			</nav>
-		</>
-		
+		</div>
 	);
 }
 

@@ -1,6 +1,6 @@
 .bar {
 	background-color: #025b96/*#0267ab*//*#2d3039*/;
-	position: sticky;
+	position: relative;
 	top: 0;
 	padding: 2.4px 0.325em 2.4px 0.375em;
 	line-height: 1.8em;
@@ -126,40 +126,4 @@
 	font-weight: 100;
 	letter-spacing: 0.2em;
 	/*text-shadow: 0.5px 0.5px #acacac;*/
-}
-
-@media screen and (max-width: 768px) {
-	#menu ul {
-		display: none;
-	}
-	#menuexpanded ul {
-		margin: 0;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-		display: block;
-		min-height: calc(100vh - 48px);
-		position: absolute;
-		top: 0px;
-		right: 0px;
-		left: 0px;
-		justify-content: center;
-		align-items: center;
-		text-align: center
-	}
-
-	#menuexpanded ul li {
-		list-style-type: none;
-		height: calc((100vh - 48px)/3);
-	}
-
-	#menuexpanded ul li a {
-		text-decoration: none;
-		text-align: center;
-		display: block;
-		top: 50%;
-		position: relative;
-		transform: translateY(-50%);
-	}
 }

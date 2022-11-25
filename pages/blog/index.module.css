@@ -1,27 +1,22 @@
 .wholepage { 
-	background-color: #02061c/*#2c2e3a*/;
-	color: rgb(255, 255, 255);
+	background-color: #e3f1fa/*#02061c*/;
+	color: rgb(2, 104, 117);
 	min-height: calc(100vh - 48px);
-	padding-top: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
-	position: static;
+	padding: 20px;
+	flex-direction: column;
+	flex-grow: 1;
 }
 
 .wholepage #index {
-	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 1);
-}
-
-.wholepage #banner {
-	background-color: #02061c;
+	box-shadow: 0 0 0.50em 0 rgba(92, 146, 181, 1);
 }
 
 .wholepage div a {
-	color: rgb(255, 255, 255);
 	font-size: 30px;
 	padding: 10px;
 	height: 50px;
 	font-family: "Roboto Mono";
+	font-weight: 700;
 	word-wrap: break-word;
 	display: inline-block;
 }
@@ -30,28 +25,4 @@
 	font-family: "Roboto Mono";
 	margin-top: 0px;
 	padding: 10px;
-}
-
-@media (min-width: 576px) {
-	.wholepage #index {
-		max-width: 85%;
-	}
-}
-
-@media (min-width: 768px) {
-	.wholepage #index {
-		max-width: 80%;
-	}
-}
-
-@media (min-width: 992px) {
-	.wholepage #index {
-		max-width: 60%;
-	}
-}
-
-@media (min-width: 1200px) {
-	.wholepage #index {
-		max-width: 50%;
-	}
 }

@@ -17,11 +17,11 @@ const Pagination = ({ pageSize, page, totalPosts, onChange}: param) => {
 	
 	return(
 		<div className="flex items-stretch justify-center">
-			<button onClick={handleClickPrev} className="rounded my-3 px-2 pb-1 transition ease-in-out delay-75 hover:bg-gray-700 hover:drop-shadow-menu duration-300">
+			<button onClick={handleClickPrev} className="rounded my-3 px-2 pb-1 transition ease-in-out delay-75 hover:bg-blue-800 hover:text-gray-100 hover:drop-shadow-menu duration-300">
 				prev
 			</button>
 			<p>Page: {currentPage}/{totalPages}</p>
-			<button onClick={handleClickNext} className="rounded my-3 px-2 pb-1 transition ease-in-out delay-75 hover:bg-gray-700 hover:drop-shadow-menu duration-300">
+			<button onClick={handleClickNext} className="rounded my-3 px-2 pb-1 transition ease-in-out delay-75 hover:bg-blue-800 hover:text-gray-100 hover:drop-shadow-menu duration-300">
 				next
 			</button>
 		</div>
