@@ -8,6 +8,7 @@ import Pagination from '../../components/Pagination'
 import { useState } from 'react'
 import { Banner } from '../../components/Banner'
 import PostMatter from '../../interfaces/PostMatter'
+import { Info } from '../../components/Info'
 
 type PostType = {
 	slug: string,
@@ -36,14 +37,19 @@ export default function Blog({ allPosts }: PostArrayType) {
 	return (
 		<>
 			<NavBar/>
-			<div className="lg:flex md:block">
-				<div className="bg-index-bg m-6">
-					<p className="text-center text-7xl text-blog-title px-10 font-Roboto-Mono py-10 font-extrabold">Blog</p>
+			<div className="lg:flex md:block bg-index-bg">
+				<div className="block">
+					<div className="bg-blog mt-0 mr-6 lg:ml-40 h-min justify-center">
+						<p className="text-center text-7xl text-white px-10 font-Roboto-Mono py-10 font-extrabold">Blog</p>
+					</div>
+					<div className="ml-40 mr-6">
+						<Info color="#38596e" size={25} />
+					</div>
 				</div>
-				<div id={styles.wholepage} className="p-5 lg:p-20">
+				<div id={styles.wholepage} className="p-5 lg:pr-56 bg-white">
 					{
 						postList.map((post, index) => (
-							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-blog-title-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-white hover:-translate-x-1 hover:-translate-y-1 duration-300">
 								<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 									<Image
 										src={post.data.thumbnail}
