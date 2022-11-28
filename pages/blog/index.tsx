@@ -39,10 +39,10 @@ export default function Blog({ allPosts }: PostArrayType) {
 			<NavBar/>
 			<div className="lg:flex md:block bg-index-bg">
 				<div className="block">
-					<div className="bg-blog mt-0 mr-6 lg:ml-40 h-min justify-center">
+					<div className="bg-blog mt-0 lg:mr-6 lg:ml-40 h-min justify-center">
 						<p className="text-center text-7xl text-white px-10 font-Roboto-Mono py-10 font-extrabold">Blog</p>
 					</div>
-					<div className="ml-40 mr-6">
+					<div className="lg:ml-40 lg:mr-6">
 						<Info color="#38596e" size={25} />
 					</div>
 				</div>
