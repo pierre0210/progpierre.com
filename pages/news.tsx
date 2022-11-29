@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from 'next';
 import Link from 'next/link';
 import NavBar from '../components/NavBar';
-import styles from './news.module.css'
+import styles from './news.module.css';
 
 const News : NextPage = () => {
 	return(
@@ -15,6 +15,6 @@ const News : NextPage = () => {
 			</div>
 		</>
 	);
-}
+};
 
-export default News
+export default News;

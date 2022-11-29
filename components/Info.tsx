@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 type param = {
 	color: string,
@@ -30,7 +30,7 @@ const Info = ({ color, size }: param) => {
 				</a>				
 			</Link>
 		</div>
-	)
+	);
 };
 
 export { Info };

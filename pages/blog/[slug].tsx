@@ -3,13 +3,13 @@ import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHTML";
 import ErrorPage from "next/error";
 import NavBar from "../../components/NavBar";
-import styles from "./blog.module.css"
+import styles from "./blog.module.css";
 import Post from "../../interfaces/Post";
 
-export default function BlogPost({ slug, data, content }: Post) {
-	const route = useRouter()
+export default function BlogPost({ slug, content }: Post) {
+	const route = useRouter();
 	if(!route.isFallback && !slug) {
-		return <ErrorPage statusCode={404}/>
+		return <ErrorPage statusCode={404}/>;
 	}
 	return (
 		<>

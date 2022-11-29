@@ -1,8 +1,8 @@
-import { NextPage } from 'next'
-import Link from 'next/link'
-import { Banner } from '../components/Banner'
-import NavBar from '../components/NavBar'
-import styles from './project.module.css'
+import { NextPage } from 'next';
+import Link from 'next/link';
+import { Banner } from '../components/Banner';
+import NavBar from '../components/NavBar';
+import styles from './project.module.css';
 
 const Project : NextPage = () => {
 	return(
@@ -32,7 +32,7 @@ const Project : NextPage = () => {
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
 export default Project;

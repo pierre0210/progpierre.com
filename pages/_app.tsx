@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -16,4 +16,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 	);
 }
 
-export default MyApp
+export default MyApp;

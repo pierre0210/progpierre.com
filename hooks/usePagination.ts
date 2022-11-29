@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useState } from "react";
 
 type paginationParam = {
 	defaultPage: number
 	pageSize: number
 	totalPosts: number
-}
+};
 
 const usePagination = ({ defaultPage, pageSize, totalPosts }: paginationParam) => {
 	const [currentPage, setCurrentPage] = useState(defaultPage);
@@ -22,6 +22,6 @@ const usePagination = ({ defaultPage, pageSize, totalPosts }: paginationParam) =
 		handleClickNext,
 		handleClickPrev
 	};
-}
+};
 
 export default usePagination;

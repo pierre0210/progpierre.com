@@ -1,24 +1,22 @@
-import { NextPage } from 'next'
-import Link from 'next/link'
-import NavBar from '../../components/NavBar'
-import { getAllPosts, getPostBySlug } from '../../lib/api'
-import styles from './index.module.css'
-import Image from 'next/image'
-import Pagination from '../../components/Pagination'
-import { useState } from 'react'
-import { Banner } from '../../components/Banner'
-import PostMatter from '../../interfaces/PostMatter'
-import { Info } from '../../components/Info'
+import Link from 'next/link';
+import NavBar from '../../components/NavBar';
+import { getAllPosts } from '../../lib/api';
+import styles from './index.module.css';
+import Image from 'next/image';
+import Pagination from '../../components/Pagination';
+import { useState } from 'react';
+import PostMatter from '../../interfaces/PostMatter';
+import { Info } from '../../components/Info';
 
 type PostType = {
 	slug: string,
 	data: PostMatter
 	content: string,
-}
+};
 
 type PostArrayType = {
 	allPosts: PostType[],
-}
+};
 
 //https://i.imgur.com/3LHwugp.jpg
 //https://i.imgur.com/a2597Fu.png
@@ -48,7 +46,7 @@ export default function Blog({ allPosts }: PostArrayType) {
 				</div>
 				<div id={styles.wholepage} className="p-5 lg:pr-56 bg-white">
 					{
-						postList.map((post, index) => (
+						postList.map((post) => (
 							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-white hover:-translate-x-1 hover:-translate-y-1 duration-300">
 								<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 									<Image
@@ -80,7 +78,7 @@ export function getStaticProps() {
 			slug: post.slug, 
 			data: post.data, 
 			content: post.content 
-		}
+		};
 	}) as PostType[];
 	return {
 		props: {

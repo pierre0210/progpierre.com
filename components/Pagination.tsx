@@ -6,7 +6,7 @@ type param = {
 	page: number,
 	totalPosts: number,
 	onChange: (page: number) => void
-}
+};
 
 const Pagination = ({ pageSize, page, totalPosts, onChange}: param) => {
 	const { currentPage, totalPages, handleClickNext, handleClickPrev } = usePagination({ defaultPage: page, pageSize: pageSize, totalPosts: totalPosts });
