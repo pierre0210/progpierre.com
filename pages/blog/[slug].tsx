@@ -16,6 +16,7 @@ export default function BlogPost({ slug, content }: Post) {
 			<NavBar/>
 			<div className={styles.wholepage}>
 				<div>
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css" />
 					<div
 						dangerouslySetInnerHTML={{ __html: content }}
 					/>
