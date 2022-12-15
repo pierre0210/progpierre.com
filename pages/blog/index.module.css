@@ -1,5 +1,5 @@
 #wholepage { 
-	background-color: #e3f1fa/*#02061c*/;
+	background-color: rgb(230, 236, 240)/*#e3f1fa#02061c*/;
 	color: rgb(2, 104, 117);
 	min-height: calc(100vh - 48px);
 	flex-direction: column;

@@ -8,7 +8,7 @@ const Home: NextPage = () => {
 		<>
 			<NavBar/>
 			<div className={styles.Home}>
-				<h1 className="text-3xl">Hi there</h1>
+				<h1 className="text-4xl font-extrabold tracking-wider">Hello</h1>
 				<hr className="w-72 bg-white"/>
 				<p className="mt-2.5 text-xs">Just some notes about what I&#39;m working on.</p>
 				<Info color="white" size={25} />

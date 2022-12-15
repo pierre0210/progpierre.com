@@ -10,7 +10,7 @@ function NavBar() {
 				<Link href="/">
 					<a id={styles.logo}><p>PROGPIERRE</p> <span>by Pierre</span></a>
 				</Link>
-				<button onClick={ () => setNavState(!isNavExpand) } className="transition ease-in-out delay-75 hover:bg-sky-900 hover:shadow-inner hover:drop-shadow-menu duration-300">
+				<button onClick={ () => setNavState(!isNavExpand) } className="transition ease-in-out delay-75 hover:bg-white hover:text-sky-900 hover:font-bold duration-200">
 					<strong>Menu</strong>
 				</button>
 			</div>

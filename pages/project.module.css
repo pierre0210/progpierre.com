@@ -1,5 +1,5 @@
 .Project {
-	background-color: #02061c/*#2c2e3a*/; /*#3d424b*/
+	background-color: rgb(33, 48, 71)/*#02061c#2c2e3a*/; /*#3d424b*/
 	color: rgb(255, 255, 255);
 	min-height: calc(100vh - 48px);
 	padding: 30px;

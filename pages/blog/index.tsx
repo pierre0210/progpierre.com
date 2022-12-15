@@ -47,7 +47,7 @@ export default function Blog({ allPosts }: PostArrayType) {
 				<div id={styles.wholepage} className="p-5 lg:pr-56 bg-white">
 					{
 						postList.map((post) => (
-							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-white hover:-translate-x-1 hover:-translate-y-1 duration-300">
+							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-white hover:-translate-x-1 hover:-translate-y-1 duration-200">
 								<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
 									<Image
 										src={post.data.thumbnail}

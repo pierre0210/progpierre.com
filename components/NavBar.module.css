@@ -1,5 +1,5 @@
 .bar {
-	background-color: #025b96/*#0267ab*//*#2d3039*/;
+	background-color: rgb(21, 153, 124)/*#025b96#0267ab*//*#2d3039*/;
 	position: relative;
 	top: 0;
 	padding: 2.4px 0.325em 2.4px 0.375em;
@@ -17,7 +17,7 @@
 #logo p {
 	font-family: "Source Code Pro";
 	/*text-shadow: 2px 2px rgba(25, 29, 44, 0.15);*/
-	background-color: #d4ecfc; /*#dfdfec#ebebf3;*/
+	background-color: #FFFFFF; /*#d4ecfc#dfdfec#ebebf3;*/
 	font-weight: 700;
 	font-size: 18px;
 	color: #013c63/*#2d3039*/;
@@ -38,18 +38,18 @@
 }
 
 #logo span {
-	font-family: "Comfortaa";
+	font-size: 15px;
+	font-family: "Source Code Pro";
 	color: #ebebf3;
 }
 
 .bar button {
 	font-family: "Comfortaa";
-	font-weight: 700;
 	color: #ebebf3;
-	background-color: #033c61/*#232324#2d3039*/;
+	background-color: rgb(33, 48, 71)/*#033c61#232324#2d3039*/;
 	font-size: 15px;
 	border-radius: 0.2em;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.25em;
 	border: 0;
 	display: inline-block;
 	height: inherit;
