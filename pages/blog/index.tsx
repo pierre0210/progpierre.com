@@ -18,11 +18,6 @@ type PostArrayType = {
 	allPosts: PostType[],
 };
 
-//https://i.imgur.com/3LHwugp.jpg
-//https://i.imgur.com/a2597Fu.png
-//https://i.imgur.com/wQZcxgN.jpg
-//<Banner image="https://i.imgur.com/FXO8S4K.jpg" text="Blog"/>
-
 export default function Blog({ allPosts }: PostArrayType) {
 	const pageSize = 5;
 	const [postList, setPostList] = useState([] as PostType[]);
@@ -48,13 +43,14 @@ export default function Blog({ allPosts }: PostArrayType) {
 					{
 						postList.map((post) => (
 							<div key={post.slug} id={styles.index} className="relative rounded-md mb-7 p-5 lg:flex md:block transition ease-in-out delay-75 bg-white text-blog-title hover:shadow-sep hover:bg-blog hover:text-white hover:-translate-x-1 hover:-translate-y-1 duration-200">
-								<div id={styles.image} className="overflow-hidden m-2 lg:left-0 lg:my-auto pt-2">
+								<div className="overflow-hidden rounded-lg w-[200px] h-[150px] m-2 p-0 lg:left-0">
 									<Image
 										src={post.data.thumbnail}
 										alt="No Image"
 										width={200}
-										height={100}
-										layout="intrinsic"
+										height={150}
+										layout="fixed"
+										objectFit="cover"
 									/>
 								</div>
 								<div>
