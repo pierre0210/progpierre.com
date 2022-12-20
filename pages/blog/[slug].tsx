@@ -5,14 +5,19 @@ import ErrorPage from "next/error";
 import NavBar from "../../components/NavBar";
 import styles from "./blog.module.css";
 import Post from "../../interfaces/Post";
+import Head from "next/head";
 
-export default function BlogPost({ slug, content }: Post) {
+export default function BlogPost({ slug, data, content }: Post) {
 	const route = useRouter();
 	if(!route.isFallback && !slug) {
 		return <ErrorPage statusCode={404}/>;
 	}
 	return (
 		<>
+			<Head>
+				<title>{data.title}</title>
+				<link rel="image_src" href={data.thumbnail}/>
+			</Head>
 			<NavBar/>
 			<div className={styles.wholepage}>
 				<div>

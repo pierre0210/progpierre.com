@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import NavBar from '../components/NavBar';
 import styles from './news.module.css';
@@ -6,6 +7,11 @@ import styles from './news.module.css';
 const News : NextPage = () => {
 	return(
 		<>
+			<Head>
+				<title>News</title>
+				<link rel="image_src" href="https://i.imgur.com/y4qM2y1.png"/>
+				<meta name="description" content="New things about progpierre.com" />
+			</Head>
 			<NavBar/>
 			<div className={styles.News}>
 				<div className="m-auto">
