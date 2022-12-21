@@ -7,6 +7,7 @@ import Pagination from '../../components/Pagination';
 import { useState } from 'react';
 import PostMatter from '../../interfaces/PostMatter';
 import { Info } from '../../components/Info';
+import Meta from '../../components/Meta';
 
 type PostType = {
 	slug: string,
@@ -18,7 +19,7 @@ type PostArrayType = {
 	allPosts: PostType[],
 };
 
-export default function Blog({ allPosts }: PostArrayType) {
+const Blog = ({ allPosts }: PostArrayType) => {
 	const pageSize = 5;
 	const [postList, setPostList] = useState([] as PostType[]);
 	const handleOnChange = (currentPage: number) => {
@@ -29,6 +30,7 @@ export default function Blog({ allPosts }: PostArrayType) {
 
 	return (
 		<>
+			<Meta title="Blog | Pierre" thumbnail="https://i.imgur.com/y4qM2y1.png" description="Blog index page" themeColor="#02061c" />
 			<NavBar/>
 			<div className="lg:flex md:block bg-index-bg">
 				<div className="block">
@@ -65,7 +67,9 @@ export default function Blog({ allPosts }: PostArrayType) {
 			</div>
 		</>
 	);
-}
+};
+
+export default Blog;
 
 export function getStaticProps() {
 	const posts = getAllPosts();

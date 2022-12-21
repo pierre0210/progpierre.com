@@ -17,4 +17,4 @@ const Banner = ({ image, text }: param) => {
 	);
 };
 
-export { Banner };
+export default Banner;

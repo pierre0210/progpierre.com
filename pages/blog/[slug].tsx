@@ -5,19 +5,16 @@ import ErrorPage from "next/error";
 import NavBar from "../../components/NavBar";
 import styles from "./blog.module.css";
 import Post from "../../interfaces/Post";
-import Head from "next/head";
+import Meta from "../../components/Meta";
 
-export default function BlogPost({ slug, data, content }: Post) {
+const BlogPost = ({ slug, data, content }: Post) => {
 	const route = useRouter();
 	if(!route.isFallback && !slug) {
 		return <ErrorPage statusCode={404}/>;
 	}
 	return (
 		<>
-			<Head>
-				<title>{data.title}</title>
-				<link rel="image_src" href={data.thumbnail}/>
-			</Head>
+			<Meta title={data.title} thumbnail={data.thumbnail} description="" themeColor="#02061c" />
 			<NavBar/>
 			<div className={styles.wholepage}>
 				<div>
@@ -30,6 +27,8 @@ export default function BlogPost({ slug, data, content }: Post) {
 		</>
 	);
 };
+
+export default BlogPost;
 
 type Paths = {
 	params: {

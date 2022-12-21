@@ -1,17 +1,18 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
+import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
 import styles from './project.module.css';
 
 const Project : NextPage = () => {
 	return(
 		<>
-			<Head>
-				<title>Project</title>
-				<link rel="image_src" href="https://i.imgur.com/y4qM2y1.png"/>
-				<meta name="description" content="Project page for progpierre.com" />
-			</Head>
+			<Meta 
+				title="Project | Pierre" 
+				thumbnail="https://i.imgur.com/y4qM2y1.png" 
+				description="Project page" 
+				themeColor="#02061c" 
+			/>
 			<NavBar/>
 			<div className={styles.Project}>
 				<div>
