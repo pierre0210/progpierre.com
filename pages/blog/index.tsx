@@ -21,6 +21,7 @@ type PostArrayType = {
 
 const Blog = ({ allPosts }: PostArrayType) => {
 	const pageSize = 5;
+	const [isLoading, setLoading] = useState(true);
 	const [postList, setPostList] = useState([] as PostType[]);
 	const handleOnChange = (currentPage: number) => {
 		const max = currentPage * pageSize;
@@ -53,6 +54,8 @@ const Blog = ({ allPosts }: PostArrayType) => {
 										height={150}
 										layout="fixed"
 										objectFit="cover"
+										className={"duration-300 ease-in-out" + (isLoading ? "grayscale blur-2xl scale-110" : "grayscale-0 blur-0 scale-100")}
+										onLoadingComplete={() => setLoading(false)}
 									/>
 								</div>
 								<div>
