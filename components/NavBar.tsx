@@ -5,22 +5,22 @@ import styles from './NavBar.module.css';
 function NavBar() {
 	const [isNavExpand, setNavState] = useState(false);
 	return (
-		<div>
+		<div className="sticky top-0 z-50">
 			<div className={styles.bar}>
 				<Link href="/">
 					<a id={styles.logo}><p>PROGPIERRE</p> <span>by Pierre</span></a>
 				</Link>
-				<button onClick={ () => setNavState(!isNavExpand) } className="transition ease-in-out delay-75 hover:bg-white hover:text-sky-900 hover:font-bold duration-200">
+				<button onClick={() => setNavState(!isNavExpand)} className="transition ease-in-out delay-75 hover:bg-white hover:text-sky-900 hover:font-bold duration-300">
 					<strong>Menu</strong>
 				</button>
 			</div>
 			<nav id="selector">
-				<div id={ isNavExpand ? styles.menuexpanded : styles.menu } className="backdrop-blur-sm">
+				<div id={isNavExpand ? styles.menuexpanded : styles.menu} className="backdrop-blur-sm">
 					<ul>
 						<li>
-							<Link href="/news">
+							<Link href="/about">
 								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
-									<strong>News</strong>
+									<strong>About</strong>
 								</a>
 							</Link>
 						</li>
@@ -32,7 +32,7 @@ function NavBar() {
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog">
+							<Link href="https://blog.progpierre.com">
 								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
 									<strong>Blog</strong>
 								</a>

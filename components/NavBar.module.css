@@ -1,13 +1,10 @@
 .bar {
-	background-color: rgb(21, 153, 124)/*#025b96#0267ab*//*#2d3039*/;
-	position: relative;
-	top: 0;
+	background-color: rgb(21, 153, 124);
 	padding: 2.4px 0.325em 2.4px 0.375em;
 	line-height: 1.8em;
 	flex-direction: row;
 	box-shadow: 0 0 0.60em 0 rgba(0, 0, 0, 0.2);
 	display: flex;
-	z-index: 3;
 	overflow: hidden;
 }
 
@@ -18,7 +15,7 @@
 #logo p {
 	font-family: "Source Code Pro";
 	/*text-shadow: 2px 2px rgba(25, 29, 44, 0.15);*/
-	background-color: #FFFFFF; /*#d4ecfc#dfdfec#ebebf3;*/
+	background-color: #FFFFFF;
 	font-weight: 700;
 	font-size: 18px;
 	color: #013c63/*#2d3039*/;
@@ -40,7 +37,7 @@
 
 #logo span {
 	font-size: 15px;
-	font-family: "Source Code Pro";
+	font-family: "Comfortaa";
 	color: #ebebf3;
 }
 

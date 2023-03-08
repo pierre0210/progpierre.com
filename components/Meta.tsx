@@ -11,10 +11,9 @@ const Meta = ({ title, thumbnail, description, themeColor }: metadata) => {
 	return (
 		<Head>
 			<title>{title}</title>
-			<meta property="og:image" content={thumbnail}/>
-			<meta name="twitter:card" content="summary_large_image"/>
-			<meta name="description" content={description}/>
-			<meta name="theme-color" content={themeColor}/>
+			<meta property="og:image" content={thumbnail} />
+			<meta name="description" content={description} />
+			<meta name="theme-color" content={themeColor} />
 		</Head>
 	);
 };

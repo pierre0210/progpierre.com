@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+	content: [
 		"./pages/index.tsx",
-		"./pages/news.tsx",
+		"./pages/about.tsx",
 		"./pages/projects.tsx",
 		"./pages/blog/*.tsx",
 		"./components/*.{js,ts,jsx,tsx}",
 	],
-  theme: {
-    extend: {
+	theme: {
+		extend: {
 			boxShadow: {
 				"sep": "5px 5px 2px 2px rgba(2, 91, 150, 0.30)",
 			},
@@ -28,9 +28,10 @@ module.exports = {
 			},
 			fontFamily: {
 				"Playfair-Display": "Playfair Display",
-				"Roboto-Mono": "Roboto Mono"
+				"Roboto-Mono": "Roboto Mono",
+				"Comfortaa": "Comfortaa"
 			},
 		},
-  },
-  plugins: [],
+	},
+	plugins: [],
 };
