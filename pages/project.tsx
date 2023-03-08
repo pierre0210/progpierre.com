@@ -4,16 +4,16 @@ import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
 import styles from './project.module.css';
 
-const Project : NextPage = () => {
-	return(
+const Project: NextPage = () => {
+	return (
 		<>
-			<Meta 
-				title="Project | Pierre" 
-				thumbnail="https://i.imgur.com/y4qM2y1.png" 
-				description="Project page" 
-				themeColor="#02061c" 
+			<Meta
+				title="Project | Pierre"
+				thumbnail="https://i.imgur.com/17InHzQ.jpg"
+				description="Project page"
+				themeColor="#02061c"
 			/>
-			<NavBar/>
+			<NavBar />
 			<div className={styles.Project}>
 				<div>
 					<h1>NovelAI Discord Bot (TypeScript)</h1>

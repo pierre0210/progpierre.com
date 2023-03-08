@@ -1,4 +1,4 @@
-.News {
+.About {
 	background-color: rgb(33, 48, 71)/*#02061c#2c2e3a*/; /*#3d424b*/
 	color: rgb(255, 255, 255);
 	min-height: calc(100vh - 48px);
@@ -6,11 +6,11 @@
 	position: static;
 }
 
-.News div h3 {
+.About div h3 {
 	font-family: "Noto Sans TC";
 }
 
-.News div a {
+.About div a {
 	font-family: "Roboto Mono", "Source Code Pro";
 	color: rgb(80, 171, 250);
 	text-decoration: none;
@@ -18,30 +18,30 @@
 	text-shadow: 1px 1px rgb(6, 96, 175);
 }
 
-.News div p {
+.About div p {
 	font-family: "Noto Sans TC";
 }
-
+/*
 @media (min-width: 576px) {
-	.News div {
+	.About div {
 		max-width: 85%;
 	}
 }
 
 @media (min-width: 768px) {
-	.News div {
+	.About div {
 		max-width: 80%;
 	}
 }
 
 @media (min-width: 992px) {
-	.News div {
+	.About div {
 		max-width: 60%;
 	}
 }
-
-@media (min-width: 1200px) {
-	.News div {
-		max-width: 50%;
+*/
+@media (min-width: 992px) {
+	.About {
+		padding: 100px;
 	}
 }
