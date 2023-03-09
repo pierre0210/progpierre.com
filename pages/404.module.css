@@ -1,0 +1,12 @@
+.NotFound {
+	top: 0px;
+	position: static;
+	background-color: rgb(33, 48, 71)/*#2c2e3a*/;
+	min-height: calc(100vh - 48px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	color: white;
+}
