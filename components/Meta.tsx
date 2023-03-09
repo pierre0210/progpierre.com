@@ -11,6 +11,7 @@ const Meta = ({ title, thumbnail, description, themeColor }: metadata) => {
 	return (
 		<Head>
 			<title>{title}</title>
+			<link rel="icon" href="/favicon.ico" />
 			<meta property="og:image" content={thumbnail} />
 			<meta name="description" content={description} />
 			<meta name="theme-color" content={themeColor} />
