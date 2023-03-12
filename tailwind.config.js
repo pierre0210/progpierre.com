@@ -29,7 +29,8 @@ module.exports = {
 			fontFamily: {
 				"Playfair-Display": "Playfair Display",
 				"Roboto-Mono": "Roboto Mono",
-				"Comfortaa": "Comfortaa"
+				"Comfortaa": "Comfortaa",
+				"NotoSans": "Noto Sans TC"
 			},
 		},
 	},
