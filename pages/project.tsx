@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
 import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
+import ProjectContainer from '../components/ProjectContainer';
 import styles from './project.module.css';
 
 const Project: NextPage = () => {
@@ -16,24 +16,9 @@ const Project: NextPage = () => {
 			<NavBar />
 			<div className={styles.Project}>
 				<div>
-					<h1>NovelAI Discord Bot (TypeScript)</h1>
-					<Link href='https://github.com/pierre0210/NovelAI-bot'>
-						<a>Github repo</a>
-					</Link>
-					<br></br>
-					<br></br>
-					<h1>Sauce Discord Bot (TypeScript)</h1>
-					<Link href='https://github.com/pierre0210/Sauce-bot'>
-						<a>Github repo</a>
-					</Link>
-					<br></br>
-					<br></br>
-					<h1>Logger Discord Bot (C#)</h1>
-					<Link href='https://github.com/pierre0210/Logger-Bot'>
-						<a>Github repo</a>
-					</Link>
-					<br></br>
-					<br></br>
+					<ProjectContainer title="NovelAI Discord Bot" url="https://github.com/pierre0210/NovelAI-bot" languages={["typescript"]} />
+					<ProjectContainer title="Sauce Discord Bot" url="https://github.com/pierre0210/Sauce-bot" languages={["typescript"]} />
+					<ProjectContainer title="Logger Discord Bot" url="https://github.com/pierre0210/Logger-Bot" languages={["csharp"]} />
 				</div>
 			</div>
 		</>

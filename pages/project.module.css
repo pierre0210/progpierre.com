@@ -6,12 +6,7 @@
 	position: static;
 }
 
-.Project div {
-	padding-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
+/*
 .Project div h1 {
 	font-family: "Noto Sans TC";
 	margin-top: 0px;
@@ -47,13 +42,14 @@
 }
 
 @media (min-width: 992px) {
-	.Project div {
-		max-width: 60%;
+	.Project {
+		padding: 100px;
 	}
 }
+*/
 
-@media (min-width: 1200px) {
-	.Project div {
-		max-width: 50%;
+@media (min-width: 992px) {
+	.Project {
+		padding: 100px;
 	}
 }
