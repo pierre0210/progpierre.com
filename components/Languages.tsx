@@ -5,9 +5,10 @@ type param = {
 	size: number
 };
 
+// https://devicon.dev/
 const Languages = ({ languages, size }: param) => {
 	return (
-		<div className="container mx-auto grid grid-cols-3 lg:m-0 lg:w-2/3 md:w-auto md:justify-center md:flex">
+		<>
 			{
 				languages.map((language) => (
 					<div key={language} className="p-1 justify-center md:w-40">
@@ -21,7 +22,7 @@ const Languages = ({ languages, size }: param) => {
 					</div>
 				))
 			}
-		</div>
+		</>
 	);
 };
 

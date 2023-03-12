@@ -20,7 +20,9 @@ const About: NextPage = () => {
 					I&apos;m a sophomore student at National Central University, majoring in Biomedical Sciences and Engineering.
 					I&apos;m interested in CTF, backend development and computer vision.
 				</p>
-				<Languages languages={["javascript", "typescript", "go", "python", "nodejs", "express", "react", "raspberrypi", "arduino", "linux", "git", "docker"]} size={50} />
+				<div className="container mx-auto grid grid-cols-3 lg:m-0 lg:w-2/3 md:w-auto md:justify-center md:flex">
+					<Languages languages={["javascript", "typescript", "go", "python", "nodejs", "express", "react", "raspberrypi", "arduino", "linux", "git", "docker"]} size={50} />
+				</div>
 			</div>
 		</>
 	);
