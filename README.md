@@ -13,5 +13,3 @@ yarn dev
 ```
 
 ### TODO
-- [ ] Footer
-- [ ] API
