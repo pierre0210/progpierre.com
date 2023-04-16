@@ -13,7 +13,8 @@ const Languages = ({ languages, size }: param) => {
 				languages.map((language) => (
 					<div key={language} className="p-1 justify-center md:w-40">
 						<Image
-							src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + language + "/" + language + "-original.svg"}
+							src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/" + language + "/" + language + "-original" +
+								(language === "go" ? "-wordmark" : "") + ".svg"}
 							width={size}
 							height={size}
 							layout="responsive"
