@@ -1,9 +1,9 @@
 .bar {
-	background-color: rgb(21, 153, 124);
+	background-color: rgb(0, 43, 54)/*rgb(21, 153, 124)*/;
 	padding: 2.4px 0.325em 2.4px 0.375em;
 	line-height: 1.8em;
 	flex-direction: row;
-	box-shadow: 0 0 0.60em 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0.8px 0 rgb(255, 255, 255);
 	display: flex;
 	overflow: hidden;
 }
@@ -31,10 +31,6 @@
 	transition: text-shadow 0.3s;
 }
 
-#logo p:hover {
-	text-shadow: 4px 3px rgba(25, 29, 44, 0.2);
-}
-
 #logo span {
 	font-size: 15px;
 	font-family: "Comfortaa";
@@ -44,7 +40,7 @@
 .bar button {
 	font-family: "Comfortaa";
 	color: #ebebf3;
-	background-color: rgb(33, 48, 71)/*#033c61#232324#2d3039*/;
+	background-color: rgb(0, 43, 54);
 	font-size: 15px;
 	border-radius: 0.2em;
 	letter-spacing: 0.25em;
@@ -66,9 +62,8 @@
 	z-index: 2;
 	margin: 0;
 	padding: 0px;
-	background-color: rgba(2, 6, 28, 0.7);
+	background-color: rgba(0, 43, 54, 0.1);
 	display: block;
-	box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.5);
 	min-height: calc(100vh - 48px);
 	position: fixed;
 	top: 48px;
