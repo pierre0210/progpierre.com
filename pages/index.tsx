@@ -15,10 +15,12 @@ const Home: NextPage = () => {
 			/>
 			<NavBar />
 			<div className={styles.Home}>
-				<h1 className="text-4xl font-extrabold tracking-wider">Hello</h1>
-				<hr className="w-72 bg-white" />
-				<p className="mt-2.5 text-xs">CTF / Backend / Computer vision</p>
-				<Info color="white" size={25} />
+				<div className="border-[1px] p-5 shadow-sep">
+					<h1 className="font-Roboto-Mono text-5xl font-extrabold tracking-wider m-3">Hello</h1>
+					<hr className=" w-100 bg-white" />
+					<p className="font-Roboto-Mono m-3 text-xs">CTF / Backend / Computer vision</p>
+					<Info color="white" size={20} />
+				</div>
 			</div>
 		</>
 	);
