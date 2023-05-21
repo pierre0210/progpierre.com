@@ -10,3 +10,13 @@
 	z-index: 1;
 	color: white;
 }
+
+.Home > div > h1::after {
+	content: "_";
+	animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  from, to { color: transparent }
+  50% { color: white }
+}

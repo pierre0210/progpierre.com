@@ -10,7 +10,8 @@ module.exports = {
 	theme: {
 		extend: {
 			boxShadow: {
-				"sep": "7px 7px 2px 2px rgb(2, 91, 150)",
+				"sep": "7px 7px 2px 0px rgb(2, 91, 150)",
+				"index-sep": "12px 12px 0px 0px rgb(2, 91, 150)",
 			},
 			backgroundColor: {
 				"blog": "rgb(56, 89, 110)",

@@ -18,15 +18,27 @@ function NavBar() {
 		<div className="sticky top-0 z-50">
 			<div className={styles.bar}>
 				<Link href="/">
-					<a id={styles.logo}><p>PROGPIERRE</p> <span>by Pierre</span></a>
+					<a id={styles.logo}>
+						<p className="group transition duration-300 my-auto">
+							PROGPIERRE
+							<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-[#025b96] mr-1"></span>
+						</p>
+						<span className="my-auto">by Pierre</span>
+					</a>
 				</Link>
-				<button onClick={() => setNavState(!isNavExpand)} ref={excludeRef} className="transition ease-in-out delay-75 hover:bg-white hover:text-sky-900 hover:font-bold duration-300">
-					<strong>Menu</strong>
+				<button onClick={() => setNavState(!isNavExpand)}
+					ref={excludeRef}
+					className="my-auto px-2 ml-auto mr-1 leading-none"
+				>
+					<strong className="group transition duration-300">
+						Menu
+						<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-[#025b96] mr-1"></span>
+					</strong>
 				</button>
 			</div>
 			<nav id="selector">
 				<div id={isNavExpand ? styles.menuexpanded : styles.menu} className="backdrop-blur-sm">
-					<ul ref={navRef}>
+					<ul className="w-fit" ref={navRef}>
 						<li>
 							<Link href="/about">
 								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
