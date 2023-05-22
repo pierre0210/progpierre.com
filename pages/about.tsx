@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
-import styles from './about.module.css';
 import Languages from '../components/Languages';
 
 const About: NextPage = () => {
@@ -14,7 +13,7 @@ const About: NextPage = () => {
 				themeColor="#02061c"
 			/>
 			<NavBar />
-			<div className={styles.About}>
+			<div className="bg-main text-main min-h-[calc(100vh-48px)] p-[30px] min-[992px]:p-[100px]">
 				<h1 className="text-6xl font-bold font-Comfortaa mb-10 text-center md:text-left">About me</h1>
 				<p className="font-Roboto-Mono p-1 my-2 mb-5 text-lg lg:w-2/3 md:w-auto sm:text-xl">
 					I&apos;m a sophomore student at National Central University, majoring in Biomedical Sciences and Engineering.

@@ -14,9 +14,9 @@ const Home: NextPage = () => {
 				themeColor="#02061c"
 			/>
 			<NavBar />
-			<div className={styles.Home}>
+			<div className="static flex bg-main text-main min-h-[calc(100vh-48px)] items-center justify-center">
 				<div className="border-[1px] p-5 shadow-index-sep">
-					<h1 className="font-Roboto-Mono text-5xl font-extrabold tracking-wider m-3">Hello</h1>
+					<h1 className="font-Roboto-Mono text-5xl font-extrabold tracking-wider m-3" id={styles.hello}>Hello</h1>
 					<hr className=" w-100 bg-white" />
 					<p className="font-Roboto-Mono m-3 text-xs">CTF / Backend / Computer vision</p>
 					<Info color="white" size={20} />

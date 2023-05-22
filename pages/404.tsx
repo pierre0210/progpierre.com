@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Meta from "../components/Meta";
 import NavBar from "../components/NavBar";
-import style from "./404.module.css";
 
 const NotFound: NextPage = () => {
 	return (
@@ -13,8 +12,8 @@ const NotFound: NextPage = () => {
 				themeColor="#02061c"
 			/>
 			<NavBar />
-			<div className={style.NotFound}>
-				<h1 className="text-6xl font-extrabold tracking-wider font-Roboto-Mono">404 Not Found.</h1>
+			<div className="static flex bg-main text-main min-h-[calc(100vh-48px)] items-center justify-center">
+				<p className="text-xl font-extrabold font-Comfortaa">404 Not Found.</p>
 			</div>
 		</>
 	);

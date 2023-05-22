@@ -2,7 +2,6 @@ import { NextPage } from 'next';
 import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
 import ProjectContainer from '../components/ProjectContainer';
-import styles from './project.module.css';
 
 const Project: NextPage = () => {
 	return (
@@ -14,7 +13,7 @@ const Project: NextPage = () => {
 				themeColor="#02061c"
 			/>
 			<NavBar />
-			<div className={styles.Project}>
+			<div className="bg-main text-main min-h-[calc(100vh-48px)] p-[30px] static lg:p-[100px]">
 				<div>
 					<ProjectContainer title="Wenku8 Crawler" url="https://github.com/pierre0210/wenku8-api" languages={["go"]} />
 					<ProjectContainer title="Reddit Media Downloader" url="https://github.com/pierre0210/reddit-dl" languages={["go"]} />
