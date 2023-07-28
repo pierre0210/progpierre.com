@@ -14,7 +14,7 @@ const Project: NextPage = () => {
 			/>
 			<NavBar />
 			<div className="bg-main text-main min-h-[calc(100vh-48px)] p-[30px] static lg:p-[100px]">
-				<div>
+				<div className="flex flex-col md:grid md:grid-cols-2">
 					<ProjectContainer title="Discord Drive" url="https://github.com/pierre0210/discord-drive" languages={["go"]} />
 					<ProjectContainer title="Wenku8 Crawler" url="https://github.com/pierre0210/wenku8-api" languages={["go"]} />
 					<ProjectContainer title="Reddit Media Downloader" url="https://github.com/pierre0210/reddit-dl" languages={["go"]} />

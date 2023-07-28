@@ -9,19 +9,21 @@ type param = {
 
 const ProjectContainer = ({ title, url, languages }: param) => {
 	return (
-		<div className="block w-full mb-5 min-[576px]:px-3 md:w-1/2 lg:w-1/3 md:inline-flex md:mx-auto">
-			<div className="block p-1 w-2/3">
-				<h1 className="font-NotoSans font-bold text-3xl">{title}</h1>
+		<div className="grid grid-cols-3 w-[50vw] mx-auto my-[4vh] shadow-index-sep border-[1px] p-5 md:w-[25vw]">
+			<div className="col-span-2">
+				<h1 className="font-NotoSans font-bold text-[4vw] md:text-[2vw]">{title}</h1>
 				<Link href={url}>
-					<a className="inline-block text-lg font-Roboto-Mono group transition duration-300">
+					<a className="inline-block text-[3.5vw] md:text-[1.5vw] font-Roboto-Mono group transition duration-300">
 						Github
 						<span className="flex max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-[#025b96]"></span>
 					</a>
 				</Link>
 			</div>
-			<div className="lg:m-0 w-1/3 md:flex md:px-3">
-				<Languages languages={languages} size={30} />
-			</div>
+			<Languages
+				languages={languages}
+				layoutType="responsive"
+				size={100}
+			/>
 		</div>
 	);
 };
