@@ -16,8 +16,9 @@ const About: NextPage = () => {
 			<div className="bg-main text-main min-h-[calc(100vh-48px)] p-[30px] min-[992px]:p-[100px]">
 				<h1 className="text-6xl font-bold font-Comfortaa mb-8 text-center md:text-left">About me</h1>
 				<p className="font-Roboto-Mono p-1 my-2 mb-10 text-lg lg:w-2/3 md:w-auto sm:text-xl">
-					I&apos;m a sophomore student at National Central University, majoring in Biomedical Sciences and Engineering.
-					I&apos;m interested in CTF, backend development and computer vision.
+					I&apos;m an undergraduate student learning cyber security and computer vision, especially interested in
+					Malware Analysis, Steganography and Deep Learning techniques used in biological features recognition.<br></br>
+					Currently, I&apos;m working as a part time research assistant at Geometric Data Vision Lab in National Central University.
 				</p>
 				<h1 className="text-6xl font-bold font-Comfortaa mb-8 text-center md:text-left">Skills</h1>
 				<div className="grid grid-cols-3 w-full md:grid-cols-6 md:w-[50vw]">
