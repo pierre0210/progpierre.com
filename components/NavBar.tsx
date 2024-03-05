@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './NavBar.module.css';
 import useClickOutside from "../hooks/useClickOutside";
 
-function NavBar() {
+const NavBar = () => {
 	const [isNavExpand, setNavState] = useState(false);
 	const navRef = useRef<HTMLUListElement>(null);
 	const excludeRef = useRef<HTMLButtonElement>(null);
@@ -65,6 +65,6 @@ function NavBar() {
 			</nav>
 		</div>
 	);
-}
+};
 
 export default NavBar;
