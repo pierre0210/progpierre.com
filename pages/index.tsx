@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 			/>
 			<NavBar />
 			<div className="static flex bg-main text-main min-h-[calc(100vh-48px)] items-center justify-center">
-				<div className="border-[1px] p-5 shadow-index-sep">
+				<div className="border-[1px] p-5" id={styles.brick}>
 					<h1 className="font-Roboto-Mono text-5xl font-extrabold tracking-wider m-3" id={styles.hello}>Hello</h1>
 					<hr className=" w-100 bg-white" />
 					<p className="font-Roboto-Mono m-3 text-xs">CTF / Backend / Computer vision</p>
