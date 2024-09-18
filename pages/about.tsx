@@ -4,6 +4,10 @@ import NavBar from '../components/NavBar';
 import Languages from '../components/Languages';
 
 const About: NextPage = () => {
+	const bio = "I\'m currently an undergraduate student learning cyber security and computer vision, especially interested in\
+				Reverse Engineering, Security in AI and Biological Features Recognition.\
+				I have participated in serveral research programs as a part-time research assitant at National Central University Geometric Data Vision Laboratory.\
+				The study fields includs developing defense methods against evasion attacks and implementing geometric deep learning model on biomedical image segmentation tasks."
 	return (
 		<>
 			<Meta
@@ -17,8 +21,7 @@ const About: NextPage = () => {
 				<div className="p-5 justify-center mx-[5vw] lg:mx-[20vw]">
 					<h1 className="text-5xl md:text-6xl font-bold font-Roboto-Mono mb-8 text-center">$ whoami</h1>
 					<p className="font-Roboto-Mono my-3 text-lg md:text-2xl text-center md:text-justify">
-						I&apos;m an undergraduate student learning cyber security and computer vision, especially interested in
-						Reverse Engineering and Deep Learning techniques used in biological features recognition.<br></br>
+						{ bio }<br></br>
 					</p>
 				</div>
 				<div className="p-5 justify-center mx-[5vw] lg:mx-[20vw]">

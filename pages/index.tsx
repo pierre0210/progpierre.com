@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 			<Meta
 				title="Pierre"
 				thumbnail="https://i.imgur.com/17InHzQ.jpg"
-				description="I'm an undergrad student interested in CTF, backend development and computer vision. Welcome to my website!"
+				description="I'm an undergrad student interested in CTF, backend development and Security in AI. Welcome to my website!"
 				themeColor="#02061c"
 			/>
 			<NavBar />
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 				<div className="border-[1px] p-5" id={styles.brick}>
 					<h1 className="font-Roboto-Mono text-5xl font-extrabold tracking-wider m-3" id={styles.hello}>Hello</h1>
 					<hr className=" w-100 bg-white" />
-					<p className="font-Roboto-Mono m-3 text-xs">CTF / Backend / Computer vision</p>
+					<p className="font-Roboto-Mono m-3 text-xs">CTF / Security in AI / Web dev</p>
 					<Info color="white" size={20} />
 				</div>
 			</div>
