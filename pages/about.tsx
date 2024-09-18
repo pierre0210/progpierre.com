@@ -4,10 +4,10 @@ import NavBar from '../components/NavBar';
 import Languages from '../components/Languages';
 
 const About: NextPage = () => {
-	const bio = "I\'m currently an undergraduate student learning cyber security and computer vision, especially interested in\
+	const bio: string = "I\'m currently an undergraduate student learning cyber security and computer vision, especially interested in\
 				Reverse Engineering, Security in AI and Biological Features Recognition.\
 				I have participated in serveral research programs as a part-time research assitant at National Central University Geometric Data Vision Laboratory.\
-				The study fields includs developing defense methods against evasion attacks and implementing geometric deep learning model on biomedical image segmentation tasks."
+				The study fields includs developing defense methods against evasion attacks and implementing geometric deep learning model on biomedical image segmentation tasks.";
 	return (
 		<>
 			<Meta
