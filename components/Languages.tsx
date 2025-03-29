@@ -2,12 +2,11 @@ import Image from "next/image";
 
 type param = {
 	languages: string[],
-	layoutType: "fixed" | "fill" | "intrinsic" | "responsive" | undefined,
 	size: number
 };
 
 // https://devicon.dev/
-const Languages = ({ languages, layoutType, size }: param) => {
+const Languages = ({ languages, size }: param) => {
 	return (
 		<>
 			{
@@ -18,7 +17,6 @@ const Languages = ({ languages, layoutType, size }: param) => {
 								(language === "go" ? "-wordmark" : "") + ".svg"}
 							width={size}
 							height={size}
-							layout={layoutType}
 							alt={language}
 						/>
 					</div>

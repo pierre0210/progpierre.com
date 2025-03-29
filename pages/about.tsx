@@ -18,9 +18,9 @@ const About: NextPage = () => {
 			/>
 			<NavBar />
 			<div className="bg-main text-main min-h-[calc(100vh-48px)] p-[30px] min-[992px]:p-[100px] block">
-				<div className="p-5 justify-center mx-[5vw] lg:mx-[20vw]">
+				<div className="p-5 justify-center mx-[5vw] lg:mx-[15vw]">
 					<h1 className="text-5xl md:text-6xl font-bold font-Roboto-Mono mb-8 text-center">$ whoami</h1>
-					<p className="font-Roboto-Mono my-3 text-lg md:text-2xl text-center md:text-justify">
+					<p className="font-Roboto-Mono my-3 text-md md:text-lg text-center md:text-justify">
 						{ bio }<br></br>
 					</p>
 				</div>
@@ -29,7 +29,6 @@ const About: NextPage = () => {
 					<div className="grid grid-cols-3 w-full md:grid-cols-6">
 						<Languages
 							languages={["javascript", "typescript", "go", "python", "c", "cplusplus", "nodejs", "express", "react", "nextjs", "linux", "docker"]}
-							layoutType="intrinsic"
 							size={500}
 						/>
 					</div>

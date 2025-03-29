@@ -17,14 +17,12 @@ const NavBar = () => {
 	return (
 		<div className="sticky top-0 z-50">
 			<div className={styles.bar}>
-				<Link href="/">
-					<a id={styles.logo}>
-						<p className="group transition duration-300 my-auto">
-							PROGPIERRE
-							<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-[#025b96] mr-1"></span>
-						</p>
-						<span className="my-auto">by Pierre</span>
-					</a>
+				<Link href="/" id={styles.logo}>
+					<p className="group transition duration-300 my-auto">
+						PROGPIERRE
+						<span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-[#025b96] mr-1"></span>
+					</p>
+					<span className="my-auto">by Pierre</span>
 				</Link>
 				<button onClick={() => setNavState(!isNavExpand)}
 					ref={excludeRef}
@@ -40,24 +38,18 @@ const NavBar = () => {
 				<div id={isNavExpand ? styles.menuexpanded : styles.menu} className="backdrop-blur-sm">
 					<ul className="w-fit" ref={navRef}>
 						<li>
-							<Link href="/about">
-								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
-									<strong>About</strong>
-								</a>
+							<Link href="/about" className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+								<strong>About</strong>
 							</Link>
 						</li>
 						<li>
-							<Link href="/project">
-								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
-									<strong>Project</strong>
-								</a>
+							<Link href="/project" className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+								<strong>Project</strong>
 							</Link>
 						</li>
 						<li>
-							<Link href="https://blog.progpierre.com">
-								<a className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
-									<strong>Blog</strong>
-								</a>
+							<Link href="https://blog.progpierre.com" className="transition ease-in-out delay-75 hover:shadow-sep hover:bg-select hover:-translate-x-1 hover:-translate-y-1 duration-300">
+								<strong>Blog</strong>
 							</Link>
 						</li>
 					</ul>
